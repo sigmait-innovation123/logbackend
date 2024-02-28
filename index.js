@@ -259,7 +259,7 @@ app.listen( PORT , () => {
 app.get('/', (req, res)=> res.json(userData))
 
 app.use(express.json())
-app.use("/api", require('../routes/createusers'))  //import router from #creatusers then create like "http://localhost:1234/api/creatuser"
+app.use("/api", require('./createusers'))  //import router from #creatusers then create like "http://localhost:1234/api/creatuser"
 
 
 //it id for trail of datastoring in mongodb which above imported
