@@ -245,7 +245,7 @@ const userData = [
 
 //this line of code for cross connection---------when browser throw cors error for routing may be 
 app.use((req, res, next)=>{
-        res.setHeader('Access-Control-Allow-Origin', 'https://65e0430971dbdae1e6a6702e--glittery-boba-15d9b3.netlify.app');
+        res.setHeader('Access-Control-Allow-Origin', 'http://65e0430971dbdae1e6a6702e--glittery-boba-15d9b3.netlify.app');
         res.header('Access-Control-Allow-Headers', "Origin, X-Requisted-With, Content-Type, Accept");
         next();
 } )
