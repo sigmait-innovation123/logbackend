@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const user = require('./usermodel') //import schema from #user model
 
-router.post('/creatuser', async (req, res)=>{ //router.post for posting data on partcular route 
+router.post('/creatuser', async (req, res)=>{ //router.post for posting data on partcular route by using url.
     try {
         //this is user which we imported above we use that user object for tramfer data to database... 
         await user.create({
